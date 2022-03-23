@@ -61,7 +61,7 @@ Automovil nuevoAuto(int n){
     return nuevo;
 }
 
-Embarque nuevoEmbarque(){
+Embarque nuevoEmbarque(int *numE){
 
     Embarque nuevo;
     int i;
@@ -90,6 +90,8 @@ Embarque nuevoEmbarque(){
         fflush(stdin);
         scanf("%d", &nuevo.estado);
     }while(comp_estado(nuevo.estado) != 1);
+
+    *numE++;
 
     return nuevo;
 }
@@ -176,9 +178,9 @@ void impAuto(Embarque E, int n){
 
 }
 
-void modDatosE(Embarque *E){
+void modDatosE(Embarque *E, int *numE){
     /// Recuerda hacer una comprobacion por si no esl embarque que desea modificar en el main
-    int opcion, numero;
+    int opcion, numero, x;
 
     system("cls");
     do{
@@ -206,10 +208,27 @@ void modDatosE(Embarque *E){
             }while(comp_estado(nuevo.estado) != 1);
             break;
         case 3:
-            printf("Elige la opcion deseada:\n");
-            printf(" 1.- Modificar los datos de un auto del embarque. \n 2.- ELIMINAR un auto del embarque");
-            fflush("stdin");
-            /// Continua
+            while(x != 1 || x != 2){
+                printf("Elige la opcion deseada:\n");
+                printf(" 1.- Modificar los datos de un auto del embarque. \n 2.- ELIMINAR un auto del embarque");
+                fflush("stdin");
+                scanf("%d", &x);
+                if(x == 1){
+                    ///llama a la funcion para modificar
+                }else if(x == 2){
+                    ///llama a la funcion para eliminar auto
+                }else{
+                    printf("Introduce una opcion valida\n");
+                }
+            }
+            break;
+        case 4:
+            system("cls");
+            printf("\n *** EMBARQUE ELIMINADO ***");
+            ///Acomodamiento de burbuja
+            *numE--;
+            system("pause");
+            break;
     }
 }
 
