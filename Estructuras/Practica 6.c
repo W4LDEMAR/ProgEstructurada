@@ -23,7 +23,27 @@ typedef struct{
 
 int main(){
     Embarque E[5];
-    int numE;
+    int numE = 0, op, fin = 0;
+
+    do{
+        printf("Altas y bajas de embarques");
+        printf("Seleccione la opcion deseada");
+        printf("1.- Dar de alta un embarque. \n2.- Realizar cambios en un embarque. \n3.- Imprimir el resumen de un embarque. \n4.- Imprimir toda la informacion del embarque. \n5.- Eliminar un embarque. \n6.- Terminar programa");
+
+        if(fin >= 1 && fin <= 6){
+            switch(op){
+                case 1:
+                    nuevoEmbarque(&numE);
+                    break;
+                case 2:
+                    modDatosE();
+                    break;
+                case 3:
+            }
+        }else{
+            printf("EROOR: Introduce una opcion valida");
+        }
+    }while(fin != 6);
 
 }
 
@@ -118,7 +138,6 @@ void impResumEmbarque(Embarque E){
 
     system("cls");
     printf("\n \t*** RESUMEN DEL EMBARQUE %s ***\n", E.id);
-    printf("El embarque cuenta con: %d autos \n", E.numAut);
     printf("El precio total del embarque es de: %f \n", E.precio);
     printf("El embarque se encuentra ---> ");
     impEstado(E.estado);
@@ -186,8 +205,7 @@ void modDatosE(Embarque *E, int *numE){
     do{
         printf("\n\t Elige el campo que deseas modificar:\n");
         printf(" 1.- ID del embarque.\n 2.- Estado del embarque.\n 3.- Autos del embarque\n");
-        printf(" 4.- Eliminar el embarque completo.\n");
-        printf("\t 5.- CANCELAR\n");
+        printf("\t 4.- CANCELAR\n");
         fflush(stdin);
         scanf("%d", &opcion);
     }while(comp_OpMod(opcion) != 1);
@@ -223,13 +241,17 @@ void modDatosE(Embarque *E, int *numE){
             }
             break;
         case 4:
-            system("cls");
-            printf("\n *** EMBARQUE ELIMINADO ***");
-            ///Acomodamiento de burbuja
-            *numE--;
-            system("pause");
+            printf("Operacion cancelada");
             break;
     }
+}
+
+void modAutos(){
+
+}
+
+void elimAuto(Embarque E, int nAuto){
+
 }
 
 int comp_OpMod(int n){
