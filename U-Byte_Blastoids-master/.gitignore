@@ -1,0 +1,27 @@
+bin/Debug/*
+allegro.log
+Blastoids_Backup.c
+blasteroids -/obj/Debug/start_screen.o
+blasteroids -/obj/Debug/sky.o
+blasteroids -/obj/Debug/single_player.o
+blasteroids -/obj/Debug/ship.o
+blasteroids -/obj/Debug/score_board.o
+*.layout
+*.depend
+*.cbp
+blasteroids -/bin/Debug/blasteroids.exe
+blasteroids -/allegro.log
+blasteroids -/allegro.log
+blasteroids -/allegro.log
+blasteroids -/bin/Debug/blasteroids.exe
+blasteroids -/blasteroids.cbp
+doxygen/doxyfile
+obj/Debug/Blastoids.o
+Blastoids_Git.layout
+blasteroids -/obj/Debug/start_screen.o
+Blastoids_Git.layout
+blasteroids -/obj/Debug/start_screen.o
+blasteroids -/obj/Debug/single_player.o
+blasteroids -/obj/Debug/sky.o
+blasteroids -/obj/Debug/start_screen.o
+Blastoids_Git.layout
