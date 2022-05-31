@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\texto.c
+	"Texto.h"
+
+1653966699 c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\texto.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\texto.cpp
+
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\cuadrado.c
+	"Cuadrado.h"
+
+1653966699 c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\cuadrado.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\figura.c
+	"Figura.h"
+	<stdlib.h>
+
+1653966699 c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\figura.h
+	<allegro5/allegro.h>
+	"Cuadrado.h"
+
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\juego.c
+	"Juego.h"
+
+1653966699 c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\juego.h
+	<stdio.h>
+	"Cuadrado.h"
+	"Figura.h"
+
+1653966699 source:c:\users\saul\documents\universidad\asalle\primer semestre\programacion estrcuturada\10x10\source.c
+	<stdio.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdlib.h>
+	"Juego.h"
+	"Texto.h"
+
